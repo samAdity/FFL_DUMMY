@@ -10,7 +10,11 @@ def main():
             result = divide_numbers(100, num)
             print(f"Result: {result}")
         except TypeError:
+# <<<<<<< aiops/fix-20250826-090044
             print(f"Error: Invalid input '{num}', must be a number.")
+# =======
+#             print(f"Error: Invalid input '{num}' for division.")
+# >>>>>>> aiops/fix-20250826-085944
 
 if __name__ == "__main__":
     main()
