@@ -1,5 +1,3 @@
-The code appears syntactically correct and doesn't have any obvious runtime errors. All imports are properly declared, the class structure is valid, the method signature is correct, and all statements are properly terminated. The Spring annotations are used correctly.
-
 package com.example.demo.exception;
 
 import org.springframework.http.HttpStatus;
