@@ -2,7 +2,10 @@ public class ErrorDemo {
     public static void main(String[] args) {
         String message = null;
 
-        // This will throw a NullPointerException
-        System.out.println("Message length: " + message.length());
+        if (message != null) {
+            System.out.println("Message length: " + message.length());
+        } else {
+            System.out.println("Message is null, cannot get length");
+        }
     }
 }
