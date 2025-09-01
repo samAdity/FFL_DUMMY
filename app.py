@@ -1,8 +1,13 @@
 def divide_numbers(a, b):
-    return a / b  # This will throw ZeroDivisionError if b = 0
+    if b == 0:
+        return "Error: Division by zero"
+    try:
+        return a / b
+    except TypeError:
+        return "Error: Invalid input types"
 
 def main():
-    numbers = [10, 0, 5, "text", 2]  # "text" will cause TypeError
+    numbers = [10, 0, 5, "text", 2]
     for num in numbers:
         result = divide_numbers(100, num)
         print(f"Result: {result}")
