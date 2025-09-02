@@ -1,5 +1,10 @@
 def divide_numbers(a, b):
-    return a / b  # This will throw ZeroDivisionError if b = 0
+    if b == 0:
+        return "Error: Division by zero"
+    try:
+        return a / b
+    except TypeError:
+        return "Error: Invalid number type"
 
 def main():
     numbers = [10, 0, 5, "text", 2]  # "text" will cause TypeError
